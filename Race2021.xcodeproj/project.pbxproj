@@ -13,6 +13,8 @@
 		3898E47E2730476200E7B338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3898E47C2730476200E7B338 /* Main.storyboard */; };
 		3898E4802730476400E7B338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3898E47F2730476400E7B338 /* Assets.xcassets */; };
 		3898E4832730476400E7B338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3898E4812730476400E7B338 /* LaunchScreen.storyboard */; };
+		3898E48B27304A3F00E7B338 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3898E48A27304A3F00E7B338 /* Car.swift */; };
+		3898E48D273050CA00E7B338 /* CarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3898E48C273050CA00E7B338 /* CarImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3898E47F2730476400E7B338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3898E4822730476400E7B338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3898E4842730476400E7B338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3898E48A27304A3F00E7B338 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		3898E48C273050CA00E7B338 /* CarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				3898E47A2730476200E7B338 /* ViewController.swift */,
 				3898E47C2730476200E7B338 /* Main.storyboard */,
 				3898E47F2730476400E7B338 /* Assets.xcassets */,
+				3898E48A27304A3F00E7B338 /* Car.swift */,
+				3898E48C273050CA00E7B338 /* CarImageView.swift */,
 				3898E4812730476400E7B338 /* LaunchScreen.storyboard */,
 				3898E4842730476400E7B338 /* Info.plist */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				3898E47B2730476200E7B338 /* ViewController.swift in Sources */,
 				3898E4772730476200E7B338 /* AppDelegate.swift in Sources */,
+				3898E48B27304A3F00E7B338 /* Car.swift in Sources */,
+				3898E48D273050CA00E7B338 /* CarImageView.swift in Sources */,
 				3898E4792730476200E7B338 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NM27U8SN8M;
 				INFOPLIST_FILE = Race2021/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NM27U8SN8M;
 				INFOPLIST_FILE = Race2021/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
