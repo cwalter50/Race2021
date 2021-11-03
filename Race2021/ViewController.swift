@@ -9,24 +9,50 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    
+    var carAImageView = CarImageView(theCar: Car())
 
+    var carBImageView = CarImageView(theCar: Car())
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        // customize CarA...
+        let carA = Car(theName: "car_green_1", theLane: 1)
+        carAImageView = CarImageView(theCar: carA)
+        self.view.addSubview(carAImageView)
+        
+        let carB = Car(theName: "car_blue_1", theLane: 2)
+        carBImageView = CarImageView(theCar: carB)
+        self.view.addSubview(carBImageView)
+        
     }
+    
+    func animateCar(theView: CarImageView)
+    {
+        UIView.animate(withDuration: theView.car.speed, animations: {
+            
+            theView.center = CGPoint(x: theView.center.x, y: -100)
+            
+        }, completion: {
+            action in
+            
+            theView.resetSpeedAndPosition()
+            
+        })
+    }
+    
 
     @IBAction func startButtonPressed(_ sender: UIButton)
     {
-        let carA = Car()
-        print(carA.name)
-        print(carA.speed)
-        carA.getRandomSpeed()
-        print(carA.speed)
+        animateCar(theView: carAImageView)
+        animateCar(theView: carBImageView)
         
-        let carB = Car(theName: "car_blue_1", theLane: 2)
-        print(carB.name)
-        print(carB.speed)
+        if carAImageView.car.speed < carBImageView.car.speed
+        {
+            // car A wins
+        }
         
         
         
